@@ -17,7 +17,7 @@ B. You also want good separation or isolation between containers.
 - The container uses the host’s network directly  
 - No network isolation between host and container  
 
-### Note:
+#### Note:
 - The container does not get its own IP (shares host network)  
 - Disadvantage: Not secure (no isolation)  
 
@@ -50,7 +50,7 @@ Example:
 
 → This provides better isolation and security  
 
-### Note:
+#### Note:
 - Containers in the same custom bridge network can communicate using container names (built-in DNS), not just IP addresses
 - Containers in the same custom bridge network can communicate using container names (DNS-based)
 
