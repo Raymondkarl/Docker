@@ -1,5 +1,5 @@
-DOCKER NOTES – PART 1 (MULTI-STAGE BUILD & BASICS)
-🔹 1. Version Control Platforms
+### DOCKER NOTES – PART 1 (MULTI-STAGE BUILD & BASICS)
+## 1. Version Control Platforms
 GitHub
 - Used to store and manage source code
 - Supports version control using Git
