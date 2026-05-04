@@ -73,7 +73,7 @@ docker inspect <name of the container>
 → show container details (mounts, IP address, etc.)  
 
 
-# Commands: Build, Run, and Mount
+## Commands: Build, Run, and Mount
 docker build -t <name of the image> .  
 → build a docker image (must be inside directory with Dockerfile)  
 
@@ -88,6 +88,6 @@ docker run -d --mount source=<volume_name>,target=<path_in_container> <image_nam
 - You can also add options like read-only by adding parameters  
 
 
-# Important Note
+## Important Note
 
 To delete a volume, you need to stop the container first  
