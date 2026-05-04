@@ -33,7 +33,7 @@ Better approach:
 - Use microservices architecture
 - Use orchestration tools like Kubernetes
 
-🔹 4. Distroless Images (Security Best Practice)
+## 4. Distroless Images (Security Best Practice)
 - Minimal Docker image that contains only:
   • Application
   • Runtime
@@ -49,7 +49,7 @@ Advantages:
 - Reduced attack surface
 - More secure (less OS vulnerabilities)
 
-🔹 5. Multi-Stage Docker Build
+## 5. Multi-Stage Docker Build
 - Uses multiple FROM statements in one Dockerfile
 - Separates build stage and runtime stage
 
@@ -65,18 +65,18 @@ FROM gcr.io/distroless/nodejs
 COPY --from=builder /app /app
 CMD ["app.js"]
 
-🔹 6. Why Use Multi-Stage Build?
+## 6. Why Use Multi-Stage Build?
 - Smaller image size
 - Cleaner production image
 - No unnecessary files (like source code and build tools)
 - Better security
 
-🔹 7. Build Docker Image
+## 7. Build Docker Image
 docker build -t <image-name> .
 Example:
 docker build -t my-app .
 
-🔹 8. Key Concept Summary
+## 8. Key Concept Summary
 
 Multi-stage build
 → separates build and runtime environments
@@ -88,6 +88,6 @@ Combined benefit:
 → Smaller, faster, and more secure Docker images
 
 
-Interview-Ready Answer
+## Interview-Ready Answer
 
 Multi-stage Docker builds allow us to separate the build environment from the runtime environment, which reduces image size and removes unnecessary dependencies. When combined with distroless images, it improves security by minimizing the attack surface and eliminating unused OS components.
