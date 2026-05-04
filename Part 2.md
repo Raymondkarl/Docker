@@ -27,7 +27,7 @@ A. Build a Dockerfile (Example: Python app)
 
 
 ### EntryPoint and CMD (Very Important)
-- ENTRYPOINT and CMD are used to execute your start command  
+ENTRYPOINT and CMD are used to execute your start command  
 
 - Difference:
 
