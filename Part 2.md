@@ -30,6 +30,7 @@ A. Build a Dockerfile (Example: Python app)
 - ENTRYPOINT and CMD are used to execute your start command  
 
 - Difference:
+
   ENTRYPOINT  
   - cannot be easily changed/overwritten when running the container  
   - used for fixed executable (main command)
