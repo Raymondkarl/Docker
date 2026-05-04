@@ -21,7 +21,7 @@ docker run hello-world
 cp app.py ..
 → Copy file to parent directory
 
-### 3. Common Drawbacks of Docker
+## 3. Common Drawbacks of Docker
 1. Runs with root privileges
 - Docker daemon runs as root
 - Potential security risk if not properly configured
