@@ -1,4 +1,4 @@
-# DOCKER NETWORKING
+# DOCKER – PART 4 (NETWORKING)
 
 ## SCENARIO
 A. You have Container 1 and Container 2 inside a Host Machine and they need to interact with each other.  
