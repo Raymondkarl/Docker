@@ -9,10 +9,12 @@ Persistent file storage - data does not get erased even when the system or conta
 
 No.1  
 - If the host operating system goes down, the container will also go down  
-- Meaning the logfile or data inside the container can be lost  
-No.2  
+- Meaning the logfile or data inside the container can be lost
+  
+No.2
 - Classic frontend & backend system  
-- They share data with each other, but if the backend goes down, the same problem exists (data loss or service disruption)  
+- They share data with each other, but if the backend goes down, the same problem exists
+
 No.3  
 - Your app (container) reads some files from the host OS  
 - If the host goes down, the app will not function properly  
