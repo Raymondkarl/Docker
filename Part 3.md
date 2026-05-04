@@ -59,7 +59,7 @@ docker volume inspect <name of the volume>
 docker volume rm <name of the volume>  
 → delete a specific volume  
 
-### Other Useful Commands
+## Other Useful Commands
 docker images | head -5  
 → show latest 5 images  
 
