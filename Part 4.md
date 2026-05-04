@@ -19,9 +19,7 @@ B. You also want good separation or isolation between containers.
 
 ### Note:
 - The container does not get its own IP (shares host network)  
-
-Disadvantage:
-a. Not secure (no isolation)  
+- Disadvantage: Not secure (no isolation)  
 
 ### 3. Overlay Networking  
 - Used for multi-host communication  
