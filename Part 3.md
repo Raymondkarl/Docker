@@ -19,7 +19,7 @@ No.3
 - Your app (container) reads some files from the host OS  
 - If the host goes down, the app will not function properly  
 
-### Solution (Docker Storage Options)
+## Solution (Docker Storage Options)
 - Docker solves this problem by providing persistent storage options:
 
 1. Bind Mounts  
