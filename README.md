@@ -54,13 +54,13 @@ Advantages:
 - Separates build stage and runtime stage
 
 Example:
-# Build Stage
+Build Stage
 FROM node:18 AS builder
 WORKDIR /app
 COPY . .
 RUN npm install && npm run build
 
-# Runtime Stage (Distroless)
+Runtime Stage (Distroless)
 FROM gcr.io/distroless/nodejs
 COPY --from=builder /app /app
 CMD ["app.js"]
