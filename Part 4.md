@@ -57,41 +57,41 @@ Example:
 
 # COMMANDS: CREATE CONTAINER AND TEST BRIDGE NETWORKING
 
-docker run -d --name |name of the container| nginx:latest  
+- docker run -d --name |name of the container| nginx:latest  
 → run the container  
 
-docker exec -it |container name| /bin/bash  
+- docker exec -it |container name| /bin/bash  
 → login to the container  
 
-apt-get update && apt-get install iputils-ping -y  
+- apt-get update && apt-get install iputils-ping -y  
 → install ping command  
 
-ping |IP address of the container|  
+- ping |IP address of the container|  
 → test connectivity  
 
-docker inspect |name of the container|  
+- docker inspect |name of the container|  
 → shows container details like IP address (run this outside the container)  
 
-docker network ls  
+- docker network ls  
 → list all networks  
 
-docker network rm |name of the network|  
+- docker network rm |name of the network|  
 → delete specific network  
 
 
 # COMMANDS: CREATE ISOLATION BETWEEN CONTAINERS
 
-docker network create |name of the custom network|  
+- docker network create |name of the custom network|  
 → create a custom bridge network (separate subnet)  
 
 #### Attach this network to a container:
 
-docker run -d --name |name of the container| --network=|name of the custom network| nginx:latest  
+- docker run -d --name |name of the container| --network=|name of the custom network| nginx:latest  
 → create container and attach to custom network  
 
-#### USING HOST NETWORK
+#### USING HOST NETWORK:
 
-docker run -d --name |name of the container| --network=host nginx:latest  
+- docker run -d --name |name of the container| --network=host nginx:latest  
 
 → container will use host network directly  
 → Docker will not assign a separate IP (it shares the host network)  
