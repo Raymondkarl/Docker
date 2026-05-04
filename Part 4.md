@@ -50,7 +50,7 @@ Example:
 
 → This provides better isolation and security  
 
-🔥 Small Upgrade:
+### Note:
 - Containers in the same custom bridge network can communicate using container names (built-in DNS), not just IP addresses
 - Containers in the same custom bridge network can communicate using container names (DNS-based)
 
