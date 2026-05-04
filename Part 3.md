@@ -47,43 +47,43 @@ Advantages:
 👉 With volumes, even if the container goes down, important files will not be erased  
 
 ## Commands: Docker Volume
-docker volume ls  
+- docker volume ls  
 → shows list of volumes  
 
-docker volume create <name of the volume>  
+- docker volume create |name of the volume|
 → create a specific volume  
 
-docker volume inspect <name of the volume>  
+- docker volume inspect |name of the volume|
 → check details of the volume  
 
-docker volume rm <name of the volume>  
+- docker volume rm |name of the volume|  
 → delete a specific volume  
 
 ## Other Useful Commands
-docker images | head -5  
+- docker images | head -5  
 → show latest 5 images  
 
-docker ps  
+- docker ps  
 → list running containers  
 
-docker ps -a  
+- docker ps -a  
 → list all containers  
 
-docker inspect <name of the container>  
+- docker inspect |name of the container|  
 → show container details (mounts, IP address, etc.)  
 
 
 ## Commands: Build, Run, and Mount
-docker build -t <name of the image> .  
+- docker build -t |name of the image| .  
 → build a docker image (must be inside directory with Dockerfile)  
 
-docker build -t <name of the image> -f <Dockerfile_name> .  
+- docker build -t |name of the image| -f |Dockerfile_name| .  
 → build using a specific Dockerfile  
 
-docker run -d <image_name>  
+- docker run -d <image_name>  
 → run container in detached mode  
 
-docker run -d --mount source=<volume_name>,target=<path_in_container> <image_name>  
+- docker run -d --mount source=|volume_name|,target=|path_in_container| |image_name|  
 → run container with volume mount  
 - You can also add options like read-only by adding parameters  
 
