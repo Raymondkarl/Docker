@@ -9,7 +9,7 @@ In my experience, I have used Docker to:
 - build Docker images  
 - write Dockerfiles  
 - run containers  
-- and push images to registries like Docker Hub, ECR, and, ACR
+- and push images to registries like Docker Hub, ECR, and ACR
 
 ## How are containers different from virtual machines?
 
@@ -20,7 +20,7 @@ They only contain:
 - application dependencies  
 - required system libraries  
 
-Unlike virtual machines, which include a full operating system, containers are faster and use fewer resources.  
+Unlike virtual machines, which include a full operating system, containers start faster and use fewer resources.  
 
 Example:  
 If I run a Java application:
@@ -48,7 +48,7 @@ When asked to containerize an application:
 ## What are the different Docker components?
 
 - Docker Client → CLI used to interact with Docker  
-- Docker Daemon → core component that runs containers, Docker Deamon is brain of Docker
+- Docker Daemon → core component responsible for building, running, and managing containers. **It is the brain of Docker.**
 - Docker Registry → stores Docker images  
 
 
