@@ -1,4 +1,4 @@
-# DOCKER - BIND MOUNTS & VOLUMES
+# DOCKER – PART 3  BIND MOUNTS & VOLUMES
 ## Key Concept
 
 Docker is ephemeral in nature - short lived  
