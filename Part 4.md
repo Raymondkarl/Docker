@@ -1,8 +1,5 @@
 # DOCKER NETWORKING
 
-REMEMBER:
-Docker is very lightweight because it does not have a complete operating system, unlike virtual machines.
-
 ## SCENARIO
 A. You have Container 1 and Container 2 inside a Host Machine and they need to interact with each other.  
 Example: Container 1 is your frontend while Container 2 is your backend.  
