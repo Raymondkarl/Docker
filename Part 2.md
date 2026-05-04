@@ -47,7 +47,6 @@ A. Build a Dockerfile (Example: Python app)
 
 🔹 Build the Docker Image
 
-2. Go to your instance, clone the repository, then go to the project files  
-
+### 2. Go to your instance, clone the repository, then go to the project files  
 docker build .  
 → the application is built, meaning the Docker image is created  
