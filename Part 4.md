@@ -34,7 +34,7 @@ By default, Docker uses bridge networking
 - Docker creates a virtual network called "docker0" (bridge)  
 - Containers connected to this bridge can communicate with each other and the host  
 
-Note:
+#### Note:
 - Containers in the same default bridge network can communicate  
 - But it is less isolated if everything is in one network  
 
