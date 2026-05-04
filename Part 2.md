@@ -39,7 +39,7 @@ ENTRYPOINT and CMD are used to execute your start command
   - can be overridden when running the container  
   - used for default arguments or commands  
 
-- You can also ignore ENTRYPOINT and just use CMD  
+You can also ignore ENTRYPOINT and just use CMD  
 
 ## Example scenario:  
 - If your application runs on port 8000 by default, but port 8000 is already used in your EC2 instance,  
