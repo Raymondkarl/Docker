@@ -44,9 +44,3 @@ A. Build a Dockerfile (Example: Python app)
 - If your application runs on port 8000 by default, but port 8000 is already used in your EC2 instance,  
   CMD can be overridden to change behavior during runtime  
 
-
-🔹 Build the Docker Image
-
-### 2. Go to your instance, clone the repository, then go to the project files  
-docker build .  
-→ the application is built, meaning the Docker image is created  
