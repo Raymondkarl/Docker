@@ -22,7 +22,7 @@ No.3
 ## Solution (Docker Storage Options)
 - Docker solves this problem by providing persistent storage options:
 
-1. Bind Mounts  
+#### 1. Bind Mounts  
 - Allows you to bind a directory from the host into the container  
 
 Example:  
@@ -31,8 +31,8 @@ Example:
 - They are bind together  
 - If you change something in the host folder, it will reflect inside the container  
 - Usually used for development (since it depends on host path)
-- 
-2. Volumes (Recommended)  
+  
+#### 2. Volumes (Recommended)  
 
 - Same concept as bind mounts but better lifecycle management  
 - Managed using Docker CLI
@@ -44,20 +44,20 @@ Advantages:
 - Can use external storage (not limited to host machine)  
 - Can be used as backup  
 - Can be easily shared across multiple containers  
-👉 With volumes, even if the container goes down, important files will not be erased  
+#### Note: With volumes, even if the container goes down, important files will not be erased  
 
 ## Commands: Docker Volume
-- docker volume ls  
-→ shows list of volumes  
+- docker volume ls
+  → shows list of volumes  
 
 - docker volume create |name of the volume|
-→ create a specific volume  
+  → create a specific volume  
 
 - docker volume inspect |name of the volume|
-→ check details of the volume  
+  → check details of the volume  
 
-- docker volume rm |name of the volume|  
-→ delete a specific volume  
+- docker volume rm |name of the volume|
+  → delete a specific volume  
 
 ## Other Useful Commands
 - docker images | head -5  
